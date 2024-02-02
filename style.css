@@ -1,0 +1,60 @@
+/* GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    border-radius: 0 40px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+/* CONTAINER IV */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 20px;
+    column-gap: 40px;
+    row-gap: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    
+}
+
+/* CONTAINER III */
+@media (min-width: 960px) and (max-width: 1279px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* CONTAINER II */
+@media (min-width: 640px) and (max-width: 959px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+/* CONTAINER I */
+@media only screen and (max-width: 639px) {
+    .square {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+}
+
